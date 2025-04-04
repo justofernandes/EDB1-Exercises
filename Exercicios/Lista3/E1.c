@@ -36,6 +36,9 @@ void preencher_vetor(int vetor[], int tam) {
 
 int busca_sequencial(int c, int i, int n, int vet[]) {
 
+    /*Aqui está sendo suposto que o vetor informado já estará ordenado, por isso
+      acondição (vet[i] > c)*/
+
     if(vet[i] > c || i > n) {
         return -1;
     }
